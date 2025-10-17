@@ -6,7 +6,7 @@ url = "https://api.zetatechs.com/v1/chat/completions"
 # 请求头（包含认证信息和数据格式）
 headers = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer sk-EcTPdoioWuMvbkmyvh8jPYjwPd5bQ5wSXj3EDI1nbnYw6XTb"  # 直接使用提供的 API 密钥
+    "Authorization": "Bearer "  # 直接使用提供的 API 密钥
 }
 
 # 请求体数据（对话内容和模型参数）
@@ -29,4 +29,5 @@ try:
 
 except requests.exceptions.RequestException as e:
     # 捕获并打印请求过程中的错误（如网络问题、认证失败等）
+
     print(f"请求出错：{e}")
